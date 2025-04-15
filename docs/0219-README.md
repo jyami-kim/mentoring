@@ -32,18 +32,18 @@
 JVM을 다음과 같은 옵션으로 실행한다고 가정합니다:
 
 ```
--Xms10MB -Xmx50MB -Xlog:gc*:logs/gc.log:t,l,tg:filecount=10,filesize=10M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=logs
+-Xms10m -Xmx50m -Xlog:gc*:logs/gc.log:t,l,tg:filecount=10,filesize=10M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=logs
 ```
 
 ### 🔍 옵션 설명
 
-| 옵션 | 설명 |
-| --- | --- |
-| -Xms10MB | 초기 힙(Heap) 크기를 10MB로 설정 |
-| -Xmx50MB | 최대 힙 크기를 50MB로 제한 |
-| -Xlog:gc\*:logs/gc.log:t,l,tg:filecount=10,filesize=10M | GC 로그를 logs/gc.log에 기록 |
-| -XX:+HeapDumpOnOutOfMemoryError | OOM 발생 시 힙 덤프 생성 |
-| -XX:HeapDumpPath=logs | 힙 덤프 저장 경로 지정 |
+| 옵션                                                      | 설명                      |
+|---------------------------------------------------------|-------------------------|
+| -Xms10m                                                 | 초기 힙(Heap) 크기를 10MB로 설정 |
+| -Xmx50m                                                 | 최대 힙 크기를 50MB로 제한       |
+| -Xlog:gc\*:logs/gc.log:t,l,tg:filecount=10,filesize=10M | GC 로그를 logs/gc.log에 기록  |
+| -XX:+HeapDumpOnOutOfMemoryError                         | OOM 발생 시 힙 덤프 생성        |
+| -XX:HeapDumpPath=logs                                   | 힙 덤프 저장 경로 지정           |
 
 ### 📊 GC 로그 분석
 

@@ -1,8 +1,8 @@
 package com.jyami
 
 // gc options:
-// -Xms10MB
-// -Xmx50MB
+// -Xms10m
+// -Xmx50m
 // -Xlog:gc*:logs/gc.log:t,l,tg:filecount=10,filesize=10M
 // -XX:+HeapDumpOnOutOfMemoryError
 // -XX:HeapDumpPath=logs

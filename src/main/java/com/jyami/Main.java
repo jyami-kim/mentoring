@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 // gc options:
-// -Xms10MB
-// -Xmx50MB
+// -Xms10m
+// -Xmx50m
 // -Xlog:gc*:logs/gc.log:t,l,tg:filecount=10,filesize=10M
 // -XX:+HeapDumpOnOutOfMemoryError
 // -XX:HeapDumpPath=logs
@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         List<String> list = new ArrayList<>();
         System.out.println("Hello World!");
 
@@ -53,7 +53,7 @@ public class Main {
                         list.add("loop:" + count++);
                         if (count % 1000 == 0) {
                             System.out.println("Item add count: " + count);
-                            // Thread.sleep(10); // 주석 해제 시 지연 가능
+                             Thread.sleep(10); // 주석 해제 시 지연 가능
                         }
                     }
 
